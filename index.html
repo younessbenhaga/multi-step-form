@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <meta name="description" content="Create a seamless user experience with our Multi-step Form – a user-friendly and intuitive tool designed to simplify complex processes into easy-to-follow steps. Whether it's collecting user information, selecting a subscription plan, adding personalized add-ons, or reviewing the final summary, our Multi-step Form guides users through each stage effortlessly. Enhance engagement, reduce form abandonment, and streamline data collection. Start building user-friendly forms with our Multi-step Form solution today.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="YOUNES BENHAGA">
+  <meta name="keywords" content="Multi-step form, User-friendly forms, Seamless form experience, Subscription plans, Add-ons selection, Gaming platform, Online gaming, User registration, Personal information form, Subscription confirmation, Gaming experience, Cloud storage, Customizable profile, Monthly billing, Yearly billing, Gaming community, Online service, Account creation, Gaming subscription, Step-by-step form">
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/icon.png">
+  <title>Multi-step form</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/step-2.css">
+  <link rel="stylesheet" href="./css/step-3.css">
+  <link rel="stylesheet" href="./css/step-4.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+
+    input.error {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="bg">
+      <div class="con con1">
+        <div class="circle-1 bg-circle">1</div>
+        <div class="para">
+          <p>Step 1</p>
+          <p>Your info</p>
+        </div>
+      </div>
+
+      <div class="con">
+        <div class="circle-2">2</div>
+        <div class="para">
+          <p>Step 2 </p>
+          <p>Select plan</p>
+        </div>
+
+      </div>
+
+      <div class="con">
+        <div class="circle-3">3</div>
+        <div class="para">
+          <p> Step 3</p>
+          <p>Add-ons</p>
+        </div>
+
+      </div>
+      <div class="con">
+        <div class="circle-4">4</div>
+        <div class="para">
+          <p>Step 4</p>
+          <p>Summary</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contain">
+      <h1>Personal info</h1>
+      <h4>Please provide your name, email address, and phone number.</h4>
+      <form action="" class="form_step1" id="myForm">
+        <div>
+          <label for="name">Name :</label><br>
+          <input type="text" placeholder="e.g. Stephen King" id="name" required><br>
+        </div>
+        <div>
+          <label for="email">Email Address</label><br>
+          <input type="email" placeholder="e.g. stephenking@lorem.com" required id="email"><br>
+        </div>
+        <div>
+          <label for="number">Phone Number</label><br>
+          <input type="number" placeholder="e.g. +1 234 567 890" id="number" required><br>
+        </div>
+
+        <div class="button-con">
+          <button type="button" class="next-step1" onclick="validateForm()">Next Step</button>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="contain1 hidden">
+      <h1>Select your plan</h1>
+      <h4>You have the option of monthly or yearly billing.</h4>
+      <form action="" class="form_step2">
+        <div class="step-2-div">
+          <div class="arcade border-bg" id="arcade" onclick="selectSubscription('arcade')">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <div>
+              <p style="font-weight: bold;display: block;">arcade</p>
+              <p><span class="prix-arcade">$9/mo</span></p>
+              <p class="free"></p>
+            </div>
+          </div>
+
+          <div class="advanced non-border" id="advanced" onclick="selectSubscription('advanced')">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <div>
+              <p style="font-weight: bold;">advanced</p>
+              <p><span class="prix-advan">$12/mo</span>
+              </p>
+              <p class="free"></p>
+            </div>
+
+          </div>
+
+          <div class="pro non-border" id="pro" onclick="selectSubscription('pro')">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <div>
+              <p style="font-weight: bold;">pro</p>
+              <p><span class="prix-pro">$15/mo</span></p>
+
+              <p class="free"></p>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="step-2-switch">
+          <div class="month color-bold">
+            monthly
+          </div>
+
+          <div>
+            <label class="switch">
+              <input type="checkbox" id="input_time">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="year">
+            yearly
+          </div>
+        </div>
+      </form>
+      <div class="button-step-2">
+        <button type="button" class="back-step2" onclick="back_step1()">Go Back</button>
+        <button type="button" class="next-step2" onclick="next_step3()">Next Step</button>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="contain-step-3 hidden">
+      <h1>Pick add-ons</h1>
+      <h4>Add-ons help enhance your gaming experience.</h4>
+      <div class="step-3-div">
+        <div class="first-step-3 Online_1 non-border " onclick="selectExper('Online')">
+          <div class="first-3"><input type="checkbox" name="a" id="Online"></div>
+          <div id="les-h">
+            <h3>Online service</h3>
+            <h5>Access to multiplayer games</h5>
+          </div>
+          <div class="first">
+            <p class="prix-onl">+$1/mo</p>
+          </div>
+        </div>
+
+
+        <div class="first-step-3 Larger_1  non-border" onclick="selectExper('Larger')">
+          <div class="first-3"><input type="checkbox" name="b" id="Larger"></div>
+          <div id="les-h">
+            <h3>Larger storage</h3>
+            <h5>Extra 1TB of cloud save</h5>
+
+          </div>
+          <div class="first">
+            <p class="prix-larg">+$2/mo</p>
+          </div>
+
+
+
+        </div>
+        <div class="first-step-3 Customizable_1 non-border" onclick="selectExper('Customizable')">
+          <div class="first-3"><input type="checkbox" name="c" id="Customizable"></div>
+          <div id="les-h">
+            <h3>Customizable Profile</h3>
+            <h5>Custom theme on your profile</h5>
+
+          </div>
+          <div class="first">
+            <p class="prix-custom">+$2/mo</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="button-step-3">
+        <button type="button" class="back-step3" onclick="back_step2()">Go Back</button>
+        <button type="button" class="next-step3" onclick="next_step4()">Next Step</button>
+      </div>
+
+    </div>
+
+
+    <div class="contain-step-4 hidden">
+      <h1>Finishing up</h1>
+      <h4>Double-check everything looks OK before confirming.</h4>
+      <div class="div-step-4">
+        <div style="position: relative;" class="first-4">
+          <div style="display: flex;font-weight: bold;">
+            <p class="step-2-prod"></p>
+            <p class="time">()</p>
+            <div class="prix-step4"></div>
+          </div>
+
+          <p class="Change" >Change</p>
+        </div>
+        <hr style="width: 90%;">
+        <div id="cont-result">
+          
+        </div>
+
+
+      </div>
+      <div class="result-product" style="display: flex;position: relative;">
+        <p class="result-product-name">Total(per month)</p>
+        <p class="result-product-prix"></p>
+      </div>
+      <div class="button-step-4">
+        <button type="button" class="back-step4" onclick="back_step4()">Go Back</button>
+        <button type="button" class="next-step4" onclick="final()">Confirm</button>
+      </div>
+
+    </div>
+
+
+    <div class="final hidden">
+      <div>
+        <img src="./assets/images/icon-thank-you.svg" alt="">
+        <p>Thank you! </p>
+        <p>Thanks for confirming your subscription! We hope you have funusing our platform. If you ever need support,
+          please feel free to email us at younesbenhaga20@gmail.com </p>
+
+      </div>
+    </div>
+
+  </main>
+  <script src="./js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+.contain-step-4 {
+    width: 60%;
+    color: hsl(213, 96%, 18%);
+    position: relative;
+}
+
+.div-step-4 {
+    height: max-content;
+    width: 70%;
+
+    margin-top: 60px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: hsl(217, 100%, 97%);
+
+}
+
+.first-4 {
+    padding-left: 10px;
+}
+
+.prix-step4 {
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.Change {
+    margin-top: 0;
+    color: hsl(231, 11%, 63%);
+    cursor: pointer;
+    width: max-content;
+}
+
+.Change:hover {
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+
+
+}
+
+.add-product-prix {
+    position: absolute;
+    right: 20px;
+}
+
+.add-product-name {
+    margin-left: 10px;
+}
+
+.back-step4 {
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #acacac;
+    cursor: pointer;
+    margin: 10px;
+
+
+}
+
+.back-step4:hover {
+    color: hsl(213, 96%, 18%);
+    font-weight: bolder;
+}
+
+.next-step4 {
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    margin-right: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+.button-step-4 {
+    width: 550px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.result-product {
+    width: 70%;
+    margin-left: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.result-product-prix {
+    position: absolute;
+    right: 20px;
+
+}
+
+.final {
+    width: 60%;
+    color: hsl(213, 96%, 18%);
+    
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.final div {
+    text-align: center;
+    
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+@media (max-width:376px) {
+    .contain-step-4 {
+        width: 320px;
+        
+        background-color: #fff;
+        height: max-content;
+        border-radius: 10px;
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .final {
+        width: 320px;
+        
+        background-color: #fff;
+        height: 400px;
+        border-radius: 10px;
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-step-4 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        margin: 0;
+    }
+
+    .contain-step-4 h1 {
+        margin-left: 20px;
+        font-size: larger;
+    }
+
+    .contain-step-4 h4 {
+        font-size: small;
+    }
+
+}

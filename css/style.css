@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(217, 100%, 97%);
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+main {
+    height: 600px;
+    width: 950px;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+}
+
+.contain {
+
+    width: 60%;
+    color: hsl(213, 96%, 18%);
+
+}
+
+.flex{
+    display: flex;
+}
+
+.bg {
+    width: 35%;
+    margin: 20px;
+    background-image: url('../assets/images/bg-sidebar-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: hsl(217, 100%, 97%);
+    text-transform: uppercase;
+}
+
+.circle-1,.circle-2,.circle-3,.circle-4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-circle {
+    background-color: hsl(228, 100%, 84%);
+    color: black;
+}
+
+.contain h1,
+.contain1 h1 {
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    padding: 0;
+
+    margin-top: 40px;
+}
+
+.con {
+    display: flex;
+
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.con1 {
+    margin-top: 40px;
+}
+
+.con p {
+
+    margin: 0;
+    width: max-content;
+    text-align: center;
+    height: max-content;
+    padding: 2px;
+
+}
+
+.para {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+h4 {
+    margin-left: 30px;
+    color: hsl(231, 11%, 63%);
+
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.form_step1 {
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-top: 0px;
+
+}
+
+
+.form_step1 input {
+    padding-left: 5px;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: hsl(213, 96%, 18%);
+
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 6px;
+
+}
+
+.form_step1 div {
+    margin-top: 35px;
+}
+
+.form_step1 button {
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 79%);
+    font-size: 14px;
+    margin-right: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-con {
+    display: flex;
+    justify-content: end;
+}
+
+.hidden {
+    display: none;
+}
+.non-border{
+    border: hsl(0, 0%, 83%) 1px solid;
+}
+.border-bg{
+    background:   hsl(217, 100%, 97%);
+    border: 1px solid  hsl(243, 100%, 62%);
+}
+
+@media (max-width:550px) {
+    .button-con {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-color: #fff;
+    }
+
+    .para {
+        display: none;
+    }
+
+    main {
+        display: block;
+        height: 667px;
+        width: 100%;
+        border-radius: 0px;
+        background-color: hsl(217, 100%, 97%);
+
+    }
+
+    .con {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+
+    .bg {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        /* border: 1px solid red; */
+
+        margin: 0;
+        background-image: url('../assets/images/bg-sidebar-mobile.svg');
+        height: 173px;
+    }
+
+    .contain {
+        width: 320px;
+        /* border: 2px solid yellow; */
+        background-color: #fff;
+        height: 370px;
+        border-radius: 10px;
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+
+    }
+
+    .contain h1 {
+        margin-top: 0;
+        /* border: 1px solid red; */
+        font-size: larger;
+        padding-top: 20px;
+    }
+
+    .contain h4 {
+        font-size: small;
+    }
+
+    .form_step1 {
+        /* border: 1px solid red; */
+        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .form_step1 div {
+        /* border: 1px solid red; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .form_step1 input {
+        width: calc(100% - 40px);
+        margin-top: 9px;
+        height: 40px;
+        font-size: large;
+
+    }
+
+    .button-con {
+        margin: 0;
+    }
+
+    .button-con button {
+        margin: 15px;
+    }
+
+}
